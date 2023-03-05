@@ -4063,6 +4063,7 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  text-color:var(--bs-yellow);
 }
 .navbar-nav .nav-link {
   padding-right: 0;
