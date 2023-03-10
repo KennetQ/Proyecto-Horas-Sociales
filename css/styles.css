@@ -301,6 +301,16 @@ img,
 svg {
   vertical-align: middle;
 }
+ /*Modificaco*/
+.image-container {
+  display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+ /*Modificado*/
+.image {
+  margin-right: 20px;
+}
 
 table {
   caption-side: bottom;
@@ -649,6 +659,8 @@ progress {
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
+    
+
   }
 }
 @media (min-width: 992px) {
