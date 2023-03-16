@@ -301,16 +301,41 @@ img,
 svg {
   vertical-align: middle;
 }
- /*Modificaco*/
+ /*Modificado*/
 .image-container {
   display: flex;
 	flex-direction: row;
 	align-items: center;
   justify-content: center;
 }
+/*modif*/
+@media (max-width: 768px) {
+  .image-container {
+    width: 50%;
+  }
+}
+/*modif*/
+@media (max-width: 480px) {
+  .image-container {
+    width: 100%;
+  }
+}
+
  /*Modificado*/
 .image {
   margin-right: 20px;
+}
+/*modif*/
+@media (max-width: 768px) {
+  .image {
+    width: 50%;
+  }
+}
+/*modif*/
+@media (max-width: 480px) {
+  .image {
+    width: 100%;
+  }
 }
 
 table {
@@ -11329,6 +11354,106 @@ p {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
 }
+
+/*Actividades - image slider */
+.carousel-container {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+  }
+
+  #img4{
+  width: 600px;
+  height: 470px;
+  position: relative;
+  margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-container {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-container {
+      width: 100%;
+    }
+  }
+  
+  
+  .navigation .prev {
+      position: absolute;
+      z-index: 10;
+      font-size: 25px;
+      top: 40%;
+      left: 10px;
+      font-weight: 700;
+    }
+    .navigation .next {
+      right: 10px;
+      position: absolute;
+      font-size: 25px;
+      z-index: 10;
+      top: 40%;
+    }
+    .navigation .nav-btn {
+      background: rgba(255, 255, 255, 0.55);
+      cursor: pointer;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    }
+    .navigation .nav-btn:hover {
+      background: white;
+    }
+  
+    
+  .carousel {
+      margin-top: 20px;
+      transition: all 0.3s ease;  
+    }
+    .carousel img {
+      width: 100%;
+      transition: all 0.3s ease;
+      border:8px solid white;
+      /*object-fit: cover;*/ /* establece cómo la imagen se ajusta al contenedor */
+      /*max-width: 100%;*/ /* establece un límite máximo en el ancho de la imagen */
+      /*max-height: 100%;*/ /* establece un límite máximo en la altura de la imagen */
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      width: 103%;
+      display: flex;
+      font-size: 20px;
+      justify-content: center;
+      align-items: center;
+      color: rgb(255, 255, 255);
+      background: rgba(0, 0, 0, 0.3);
+      height: 35px;
+    }
+
+    .item {
+      position: absolute;
+      display: none;
+    }
+    
+    .main {
+      display: block;
+    }
+  
+    
+
+/*Fin - image slider*/
+
 
 @media (min-width: 768px) {
   section {
