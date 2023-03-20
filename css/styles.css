@@ -11423,9 +11423,6 @@ p {
       width: 100%;
       transition: all 0.3s ease;
       border:8px solid white;
-      /*object-fit: cover;*/ /* establece cómo la imagen se ajusta al contenedor */
-      /*max-width: 100%;*/ /* establece un límite máximo en el ancho de la imagen */
-      /*max-height: 100%;*/ /* establece un límite máximo en la altura de la imagen */
     }
 
     .caption {
@@ -11549,7 +11546,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header.png"); /*Header photo*/
+  background-image: url("../assets/img/header.png"); /*Imagen de cabezera*/
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11606,12 +11603,13 @@ header.masthead .masthead-heading {
   display: block;
   margin: 0 auto;
 }
+/*Background tarjetas del Ministerios*/
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 200, 0, 0.9);
+  background: rgb(95,95,95);
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -11692,12 +11690,13 @@ header.masthead .masthead-heading {
   display: block;
   margin: 0 auto;
 }
+/*Background Tarjeta de Programas*/
 #programs .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 200, 0, 0.9);
+  background: rgb(95,95,95);
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -11955,7 +11954,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("../assets/img/map-image.png"); /*Imagen fondo de contact*/
   background-repeat: no-repeat;
   background-position: center;
 }
