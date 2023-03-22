@@ -301,42 +301,35 @@ img,
 svg {
   vertical-align: middle;
 }
+
+/*Apartado imagenes responsive*/
  /*Modificado*/
 .image-container {
   display: flex;
-	flex-direction: row;
-	align-items: center;
   justify-content: center;
 }
-/*modif*/
-@media (max-width: 768px) {
-  .image-container {
-    width: 50%;
-  }
-}
-/*modif*/
-@media (max-width: 480px) {
-  .image-container {
-    width: 100%;
-  }
-}
+
 
  /*Modificado*/
-.image {
+.image-contaimer img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+.image{
   margin-right: 20px;
 }
-/*modif*/
-@media (max-width: 768px) {
-  .image {
-    width: 50%;
+
+@media screen and (max-width: 600px) {
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
-/*modif*/
-@media (max-width: 480px) {
-  .image {
-    width: 100%;
-  }
-}
+/*Cierra apartado*/
 
 table {
   caption-side: bottom;
@@ -11374,6 +11367,13 @@ p {
     .carousel-container {
       width: 50%;
     }
+
+    #img4{
+      width: 365px;
+      height: 280px;
+      position: relative;
+      margin: 0 auto;
+      }
   }
   
   @media (max-width: 480px) {
@@ -11436,6 +11436,21 @@ p {
       color: rgb(255, 255, 255);
       background: rgba(0, 0, 0, 0.3);
       height: 35px;
+    }
+
+    @media (max-width: 768px) {
+      .caption {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        background: rgba(0, 0, 0, 0.3);
+        height: 35px;
+      }
     }
 
     .item {
@@ -11592,6 +11607,7 @@ header.masthead .masthead-heading {
     height: 400;
   }
 }
+
 /*Apartado para Ministerios*/
 #portfolio .portfolio-item {
   max-width: 26rem;
@@ -11701,6 +11717,7 @@ header.masthead .masthead-heading {
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
+  
 }
 #programs.portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 1.25rem;
@@ -11737,6 +11754,13 @@ header.masthead .masthead-heading {
 .portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
   font-size: 3rem;
   line-height: 3rem;
+} 
+/*Texto h2 responsive*/
+@media screen and (max-width: 600px) {
+  .portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
 .portfolio-modal .modal-content p.item-intro {
   font-style: italic;
@@ -11751,6 +11775,7 @@ header.masthead .masthead-heading {
 }
 .portfolio-modal .modal-content img {
   margin-bottom: 2rem;
+  
 }
 .portfolio-modal .close-modal {
   position: absolute;
