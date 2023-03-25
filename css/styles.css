@@ -11349,45 +11349,85 @@ p {
 }
 
 /*Actividades - image slider */
+/*Vista Web*/
 .carousel-container {
-  width: 600px;
-  height: 400px;
+  width: 900px;
+  height: 700px;
   position: relative;
   margin: 0 auto;
   }
 
   #img4{
-  width: 600px;
-  height: 470px;
+  width: 900px;
+  height: 710px;
   position: relative;
   margin: 0 auto;
   }
-
-  @media (max-width: 768px) {
-    .carousel-container {
-      width: 50%;
-    }
-
-    #img4{
-      width: 365px;
-      height: 280px;
-      position: relative;
-      margin: 0 auto;
-      }
-  }
   
-  @media (max-width: 480px) {
+  .navigation .prev {
+    position: absolute;
+    z-index: 10;
+    font-size: 25px;
+    top: 50%;
+    left: 10px;
+    font-weight: 700;
+  }
+  .navigation .next {
+      right: 10px;
+      position: absolute;
+      font-size: 25px;
+      z-index: 10;
+      top: 50%;
+  }
+  /*Fin vista web*/
+
+  /*Vista Tablet*/
+  @media (max-width: 984px){
     .carousel-container {
       width: 100%;
     }
-  }
   
+    #img4{
+      width: 700px;
+      height: 560px;
+      position: relative;
+      margin: 0 auto;
+      }
   
-  .navigation .prev {
+    .navigation .prev {
       position: absolute;
       z-index: 10;
       font-size: 25px;
-      top: 40%;
+      top: 35%;
+      left: 10px;
+      font-weight: 700;
+      }
+      .navigation .next {
+        right: 10px;
+        position: absolute;
+        font-size: 25px;
+        z-index: 10;
+        top: 35%;
+      } 
+  }
+  /*Fin vista tablet*/
+
+  /*Vista teléfono*/
+  @media (max-width: 480px){
+    .carousel-container {
+      width: 100%;
+    }
+    #img4{
+      width: 370px;
+      height: 295px;
+      position: relative;
+      margin: 0 auto;
+      }
+    .navigation .prev {
+      position: absolute;
+      z-index: 10;
+      font-size: 25px;
+      top: 18%;
       left: 10px;
       font-weight: 700;
     }
@@ -11396,8 +11436,11 @@ p {
       position: absolute;
       font-size: 25px;
       z-index: 10;
-      top: 40%;
+      top: 18%;
     }
+  }
+  /*Fin vista teléfono*/
+
     .navigation .nav-btn {
       background: rgba(255, 255, 255, 0.55);
       cursor: pointer;
